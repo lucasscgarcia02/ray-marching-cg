@@ -6,14 +6,16 @@ void main() {
 }`;
 
 const fragmentShaderSrc = `#version 300 es
+// Créditos
+// Boilerplate: https://www.shadertoy.com/view/fdlGWX
+// Refração: https://www.shadertoy.com/view/sls3WN
+
 precision highp float;
 
 out vec4 outColor;
 
 uniform vec2 u_resolution;
 uniform float u_time;
-
-// Visit my tutorial to learn how this works: https://inspirnathan.com/posts/53-shadertoy-tutorial-part-7/
 
 const int MAX_MARCHING_STEPS = 255;
 const float MIN_DIST = 0.0;
